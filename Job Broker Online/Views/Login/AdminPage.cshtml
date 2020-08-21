@@ -8,6 +8,51 @@
 <br />
 
 <h2>AdminPage</h2>
+<br />
+
+<div class="w3-col">
+
+    <div class="w3-col">
+
+        @using (Html.BeginForm("Search", "SearchEvent", FormMethod.Post))
+        {
+            @Html.TextBox("infor", "", new { @class = "form-control", required = "required" })<br />
+
+            <input type="submit" value="Search" class="w3-btn" />
+        }
+
+    </div>
+
+    <table class="w3-table">
+        <tr>
+            <th> Student ID </th>
+            <th> Full Name </th>
+            <th> Contact Number </th>
+            <th> Student Email Link </th>
+            <th> Qualification Title </th>
+            <th> Recommended Jobs </th>
+            <th> Progress </th>
+            <th> Profile </th>
+            <th> Explanatory Comments </th>
+        </tr>
+
+        <tr>
+            <td> XXX </td>
+            <td> XXX </td>
+            <td> XXX </td>
+            <td> XXX </td>
+            <td> XXX </td>
+            <td> XXX </td>
+            <td> XXX </td>
+            <td> XXX </td>
+            <td> XXX </td>
+        </tr>
+    </table><br />
+
+</div>
+
+
+@Html.ActionLink("Go back", "HomePage", "Home")
 
 <br />
 

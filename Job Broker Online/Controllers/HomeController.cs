@@ -9,7 +9,7 @@ namespace Job_Broker_Online.Controllers
     public class HomeController : Controller
     {
         // GET: Home
-        public ActionResult Homepage()
+        public ActionResult HomePage()
         {
             return View();
         }

@@ -20,8 +20,6 @@
         <div class="w3-bar w3-theme-d2 w3-left-align">
             <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
             <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
-            <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
-            <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
             <div class="w3-dropdown-hover w3-hide-small">
                 <button class="w3-button" title="Notifications"> Registration <i class="fa fa-caret-down"></i></button>
                 <div class="w3-dropdown-content w3-card-4 w3-bar-block">
@@ -35,8 +33,6 @@
 
         <!-- Navbar on small screens -->
         <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-            <a href="#about" class="w3-bar-item w3-button">About</a>
-            <a href="#contact" class="w3-bar-item w3-button">Contact</a>
             <a onclick="document.getElementById('id01').style.display='block'" class="w3-bar-item w3-button">Admin Registration</a>
             <a onclick="document.getElementById('id02').style.display='block'" class="w3-bar-item w3-button">Employee Registration</a>
             <a onclick="document.getElementById('id03').style.display='block'" class="w3-bar-item w3-button">Student Registration</a>
@@ -102,6 +98,12 @@
             </header>
             <div class="w3-container">
                 <p>Login Area</p>
+
+                <br />
+                @Html.ActionLink("Go to AdminPage", "AdminPage", "Login") <br />
+                @Html.ActionLink("Go to EmployeePage", "EmployeePage", "Login") <br />
+                @Html.ActionLink("Go to StudentPage", "StudentPage", "Login")
+
             </div>
             <footer class="w3-container w3-teal">
                 <p>Footer</p>

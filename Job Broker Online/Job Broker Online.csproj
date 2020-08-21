@@ -92,6 +92,9 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\image1.jfif" />
+    <Content Include="Content\images\image2.jfif" />
+    <Content Include="Content\images\image3.jfif" />
     <Content Include="Content\images\images.jfif" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -106,7 +109,7 @@
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Web.config" />
     <Content Include="Views\Shared\_myLayout.cshtml" />
-    <Content Include="Views\Home\Homepage.cshtml" />
+    <Content Include="Views\Home\HomePage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -134,6 +137,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
     <Content Include="Views\Shared\_myLayout2.cshtml" />
     <Content Include="Views\Login\AdminPage.cshtml" />
+    <Content Include="Views\Login\EmployeePage.cshtml" />
+    <Content Include="Views\Login\StudentPage.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
