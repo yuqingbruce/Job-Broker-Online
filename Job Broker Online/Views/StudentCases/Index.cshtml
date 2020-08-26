@@ -7,6 +7,14 @@
 
 <h2>Index</h2>
 
+@using (Html.BeginForm("Search", "SearchEvent", FormMethod.Post))
+{
+    @Html.TextBox("infor", "", new { @class = "form-control", required = "required" })
+    
+
+    <input type="submit" value="Search" class="w3-btn" />
+}
+
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
@@ -42,41 +50,42 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.FullName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ContactNumber)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.StudentEmailLink)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.QualificationTitle)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.RecommendedJobs)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Progress)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ProfileLink)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ExplanatoryComments)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Student.Password)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.StudentId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.StudentId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.StudentId })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FullName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContactNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentEmailLink)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QualificationTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RecommendedJobs)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Progress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProfileLink)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ExplanatoryComments)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Student.Password)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.StudentId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.StudentId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.StudentId })
+            </td>
+        </tr>
+    }
 
 </table>
