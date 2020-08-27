@@ -108,6 +108,7 @@
     <Content Include="Content\images\image2.jfif" />
     <Content Include="Content\images\image3.jfif" />
     <Content Include="Content\images\images.jfif" />
+    <Content Include="Content\images\LoginPic.jfif" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
